@@ -1,0 +1,179 @@
+2016-03-08 20:52:19 Error: [Cake\Controller\Exception\MissingActionException] Action BookmarksController::tagged() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'BookmarksController',
+  'action' => 'tagged',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /cakephp3login/
+Stack Trace:
+#0 C:\wamp\www\cakephp3login\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp\www\cakephp3login\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\BookmarksController))
+#2 C:\wamp\www\cakephp3login\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-03-08 20:52:48 Error: [Cake\Routing\Exception\MissingControllerException] Controller class View could not be found.
+Exception Attributes: array (
+  'class' => 'View',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cakephp3login/view
+Stack Trace:
+#0 C:\wamp\www\cakephp3login\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-08 20:53:41 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`doctordial`.`bookmarks`, CONSTRAINT `bookmarks_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`))
+Request URL: /cakephp3login/bookmarks/add
+Referer URL: http://localhost/cakephp3login/bookmarks/add
+Stack Trace:
+#0 C:\wamp\www\cakephp3login\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 C:\wamp\www\cakephp3login\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(171): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\wamp\www\cakephp3login\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\wamp\www\cakephp3login\vendor\cakephp\cakephp\src\Database\Connection.php(270): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\wamp\www\cakephp3login\vendor\cakephp\cakephp\src\Database\Query.php(174): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\wamp\www\cakephp3login\vendor\cakephp\cakephp\src\ORM\Table.php(1534): Cake\Database\Query->execute()
+#6 C:\wamp\www\cakephp3login\vendor\cakephp\cakephp\src\ORM\Table.php(1450): Cake\ORM\Table->_insert(Object(App\Model\Entity\Bookmark), Array)
+#7 C:\wamp\www\cakephp3login\vendor\cakephp\cakephp\src\ORM\Table.php(1381): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Bookmark), Object(ArrayObject))
+#8 C:\wamp\www\cakephp3login\vendor\cakephp\cakephp\src\Database\Connection.php(557): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#9 C:\wamp\www\cakephp3login\vendor\cakephp\cakephp\src\ORM\Table.php(1382): Cake\Database\Connection->transactional(Object(Closure))
+#10 C:\wamp\www\cakephp3login\src\Controller\BookmarksController.php(67): Cake\ORM\Table->save(Object(App\Model\Entity\Bookmark))
+#11 [internal function]: App\Controller\BookmarksController->add()
+#12 C:\wamp\www\cakephp3login\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#13 C:\wamp\www\cakephp3login\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#14 C:\wamp\www\cakephp3login\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\BookmarksController))
+#15 C:\wamp\www\cakephp3login\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#16 {main}
+
+
+2016-03-08 20:55:04 Error: Fatal Error (1): Class 'App\Model\Entity\DefaultPasswordHasher' not found in [C:\wamp\www\cakephp3login\src\Model\Entity\User.php, line 36]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 209
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 92
+[main] - [internal], line ??
+
+
+
+2016-03-08 20:55:04 Error: [Cake\Error\FatalErrorException] Class 'App\Model\Entity\DefaultPasswordHasher' not found
+Request URL: /cakephp3login/users/add
+Referer URL: http://localhost/cakephp3login/users/add
+Stack Trace:
+#0 C:\wamp\www\cakephp3login\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(92): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'App\\Mode...', 'C:\\wamp\\www\\cak...', 36)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-03-08 20:58:32 Error: Fatal Error (1): Class 'App\Model\Entity\DefaultPasswordHasher' not found in [C:\wamp\www\cakephp3login\src\Model\Entity\User.php, line 32]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 209
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 92
+[main] - [internal], line ??
+
+
+
+2016-03-08 20:58:32 Error: [Cake\Error\FatalErrorException] Class 'App\Model\Entity\DefaultPasswordHasher' not found
+Request URL: /cakephp3login/users/add
+Referer URL: http://localhost/cakephp3login/users/add
+Stack Trace:
+#0 C:\wamp\www\cakephp3login\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(92): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'App\\Mode...', 'C:\\wamp\\www\\cak...', 32)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-03-08 21:03:40 Error: Fatal Error (1): Class 'App\Model\Entity\DefaultPasswordHasher' not found in [C:\wamp\www\cakephp3login\src\Model\Entity\User.php, line 32]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 209
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 92
+[main] - [internal], line ??
+
+
+
+2016-03-08 21:03:40 Error: [Cake\Error\FatalErrorException] Class 'App\Model\Entity\DefaultPasswordHasher' not found
+Request URL: /cakephp3login/users/add
+Referer URL: http://localhost/cakephp3login/users/add
+Stack Trace:
+#0 C:\wamp\www\cakephp3login\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(92): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'App\\Mode...', 'C:\\wamp\\www\\cak...', 32)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-03-08 21:04:07 Error: Fatal Error (4): syntax error, unexpected 'protected' (T_PROTECTED) in [C:\wamp\www\cakephp3login\src\Model\Entity\User.php, line 38]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 209
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 92
+[main] - [internal], line ??
+
+
+
+2016-03-08 21:04:07 Error: [Cake\Error\FatalErrorException] syntax error, unexpected 'protected' (T_PROTECTED)
+Request URL: /cakephp3login/users/add
+Referer URL: http://localhost/cakephp3login/users/add
+Stack Trace:
+#0 C:\wamp\www\cakephp3login\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(92): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 38)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-03-09 09:35:17 Error: [Cake\Controller\Exception\MissingActionException] Action PagesController::home() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'home',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /cakephp3login/pages/home
+Stack Trace:
+#0 C:\wamp\www\cakephp3login\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp\www\cakephp3login\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\PagesController))
+#2 C:\wamp\www\cakephp3login\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-03-09 09:35:21 Error: [Cake\Controller\Exception\MissingActionException] Action PagesController::index() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'index',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /cakephp3login/pages/
+Stack Trace:
+#0 C:\wamp\www\cakephp3login\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp\www\cakephp3login\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\PagesController))
+#2 C:\wamp\www\cakephp3login\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-03-09 09:35:29 Error: [Cake\Controller\Exception\MissingActionException] Action PagesController::index() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'index',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /cakephp3login/pages/
+Stack Trace:
+#0 C:\wamp\www\cakephp3login\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp\www\cakephp3login\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\PagesController))
+#2 C:\wamp\www\cakephp3login\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-03-09 11:44:00 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::login() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /cakephp3login/users/login
+Stack Trace:
+#0 C:\wamp\www\cakephp3login\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp\www\cakephp3login\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\wamp\www\cakephp3login\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
