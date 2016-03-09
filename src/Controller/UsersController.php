@@ -13,7 +13,7 @@ class UsersController extends AppController
 
 public function beforeFilter(\Cake\Event\Event $event)
 {
-    $this->Auth->allow(['add']);
+    $this->Auth->allow(['add','index','edit']);
 }
     /**
      * Index method
@@ -22,11 +22,20 @@ public function beforeFilter(\Cake\Event\Event $event)
      */
      public function login()
 {
+	
+	//check if user is already logged in and redirect
+	if($this->Auth->user()){
+		 $this->Flash->success('You are already logged in');
+		 return $this->redirect(['action'=>'index']);
+		 
+	}
+	//check if login button was clicked
     if ($this->request->is('post')) {
         $user = $this->Auth->identify();
         if ($user) {
             $this->Auth->setUser($user);
-            return $this->redirect($this->Auth->redirectUrl());
+           
+           // return $this->redirect($this->Auth->redirectUrl());
         }
         $this->Flash->error('Your username or password is incorrect.');
     }

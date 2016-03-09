@@ -177,3 +177,77 @@ Stack Trace:
 #3 {main}
 
 
+2016-03-09 12:51:09 Error: Fatal Error (4): syntax error, unexpected ')' in [C:\wamp\www\cakephp3login\src\Template\Layout\default.ctp, line 47]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 209
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 92
+[main] - [internal], line ??
+
+
+
+2016-03-09 12:51:10 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ')'
+Request URL: /cakephp3login/users
+Referer URL: http://localhost/cakephp3login/users/login
+Stack Trace:
+#0 C:\wamp\www\cakephp3login\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(92): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 47)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-03-09 12:51:34 Error: [Cake\View\Exception\MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => NULL,
+)
+Request URL: /cakephp3login/users
+Referer URL: http://localhost/cakephp3login/users/login
+Stack Trace:
+#0 C:\wamp\www\cakephp3login\vendor\cakephp\cakephp\src\Core\ObjectRegistry.php(91): Cake\View\HelperRegistry->_throwMissingClassError('Auth', NULL)
+#1 C:\wamp\www\cakephp3login\vendor\cakephp\cakephp\src\View\HelperRegistry.php(66): Cake\Core\ObjectRegistry->load('Auth')
+#2 C:\wamp\www\cakephp3login\vendor\cakephp\cakephp\src\View\View.php(888): Cake\View\HelperRegistry->__isset('Auth')
+#3 C:\wamp\www\cakephp3login\src\Template\Layout\default.ctp(47): Cake\View\View->__get('Auth')
+#4 C:\wamp\www\cakephp3login\vendor\cakephp\cakephp\src\View\View.php(992): include('C:\\wamp\\www\\cak...')
+#5 C:\wamp\www\cakephp3login\vendor\cakephp\cakephp\src\View\View.php(952): Cake\View\View->_evaluate('C:\\wamp\\www\\cak...', Array)
+#6 C:\wamp\www\cakephp3login\vendor\cakephp\cakephp\src\View\View.php(633): Cake\View\View->_render('C:\\wamp\\www\\cak...')
+#7 C:\wamp\www\cakephp3login\vendor\cakephp\cakephp\src\View\View.php(592): Cake\View\View->renderLayout('', 'default')
+#8 C:\wamp\www\cakephp3login\vendor\cakephp\cakephp\src\Controller\Controller.php(612): Cake\View\View->render(NULL, NULL)
+#9 C:\wamp\www\cakephp3login\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#10 C:\wamp\www\cakephp3login\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#11 C:\wamp\www\cakephp3login\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#12 {main}
+
+
+2016-03-09 15:12:45 Error: Fatal Error (1): Class 'App\Controller\AuthComponent' not found in [C:\wamp\www\cakephp3login\src\Controller\AppController.php, line 83]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 209
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 92
+[main] - [internal], line ??
+
+
+
+2016-03-09 15:12:46 Error: [Cake\Error\FatalErrorException] Class 'App\Controller\AuthComponent' not found
+Request URL: /cakephp3login/users
+Referer URL: http://localhost/cakephp3login/users/login
+Stack Trace:
+#0 C:\wamp\www\cakephp3login\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(92): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'App\\Cont...', 'C:\\wamp\\www\\cak...', 83)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-03-09 15:13:10 Error: Fatal Error (4): syntax error, unexpected '::' (T_PAAMAYIM_NEKUDOTAYIM), expecting ',' or ';' in [C:\wamp\www\cakephp3login\src\Controller\AppController.php, line 19]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 209
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 92
+[main] - [internal], line ??
+
+
+
+2016-03-09 15:13:10 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '::' (T_PAAMAYIM_NEKUDOTAYIM), expecting ',' or ';'
+Request URL: /cakephp3login/users
+Referer URL: http://localhost/cakephp3login/users/login
+Stack Trace:
+#0 C:\wamp\www\cakephp3login\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(92): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cak...', 19)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+

@@ -68,6 +68,10 @@ public function isAuthorized($user)
 {
     return false;
 }
+
+public function beforeFilter(Event $event){
+	$this->set('authUser', $this->Auth->user());
+}
     /**
      * Before render callback.
      *
@@ -76,6 +80,8 @@ public function isAuthorized($user)
      */
     public function beforeRender(Event $event)
     {
+    	
+    	
         if (!array_key_exists('_serialize', $this->viewVars) &&
             in_array($this->response->type(), ['application/json', 'application/xml'])
         ) {

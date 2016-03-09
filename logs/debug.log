@@ -54,3 +54,124 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
+2016-03-09 14:49:29 Notice: Strict (2048): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\wamp\www\cakephp3login\src\Controller\AppController.php, line 29]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 140
+include - APP/Controller\AppController.php, line 29
+Composer\Autoload\includeFile - ROOT\vendor\composer\ClassLoader.php, line 412
+Composer\Autoload\ClassLoader::loadClass() - ROOT\vendor\composer\ClassLoader.php, line 301
+spl_autoload_call - [internal], line ??
+include - APP/Controller\UsersController.php, line 12
+Composer\Autoload\includeFile - ROOT\vendor\composer\ClassLoader.php, line 412
+Composer\Autoload\ClassLoader::loadClass() - ROOT\vendor\composer\ClassLoader.php, line 301
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+Cake\Core\App::_classExistsInBase() - CORE\src\Core\App.php, line 87
+Cake\Core\App::className() - CORE\src\Core\App.php, line 64
+Cake\Routing\Filter\ControllerFactoryFilter::_getController() - CORE\src\Routing\Filter\ControllerFactoryFilter.php, line 82
+Cake\Routing\Filter\ControllerFactoryFilter::beforeDispatch() - CORE\src\Routing\Filter\ControllerFactoryFilter.php, line 50
+Cake\Routing\DispatcherFilter::handle() - CORE\src\Routing\DispatcherFilter.php, line 145
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 389
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 355
+Cake\Routing\Dispatcher::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 78
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 62
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-03-09 14:49:29 Notice: Strict (2048): Declaration of App\Controller\UsersController::beforeFilter() should be compatible with App\Controller\AppController::beforeFilter() in [C:\wamp\www\cakephp3login\src\Controller\UsersController.php, line 12]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 140
+include - APP/Controller\UsersController.php, line 12
+Composer\Autoload\includeFile - ROOT\vendor\composer\ClassLoader.php, line 412
+Composer\Autoload\ClassLoader::loadClass() - ROOT\vendor\composer\ClassLoader.php, line 301
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+Cake\Core\App::_classExistsInBase() - CORE\src\Core\App.php, line 87
+Cake\Core\App::className() - CORE\src\Core\App.php, line 64
+Cake\Routing\Filter\ControllerFactoryFilter::_getController() - CORE\src\Routing\Filter\ControllerFactoryFilter.php, line 82
+Cake\Routing\Filter\ControllerFactoryFilter::beforeDispatch() - CORE\src\Routing\Filter\ControllerFactoryFilter.php, line 50
+Cake\Routing\DispatcherFilter::handle() - CORE\src\Routing\DispatcherFilter.php, line 145
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 389
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 355
+Cake\Routing\Dispatcher::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 78
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 62
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-03-09 14:49:29 Notice: Notice (8): Undefined variable: authedUser in [C:\wamp\www\cakephp3login\src\Template\Layout\default.ctp, line 47]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 140
+include - APP/Template\Layout\default.ctp, line 47
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 633
+Cake\View\View::render() - CORE\src\View\View.php, line 592
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 612
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-03-09 14:49:57 Notice: Notice (8): Undefined variable: authedUser in [C:\wamp\www\cakephp3login\src\Template\Layout\default.ctp, line 47]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 140
+include - APP/Template\Layout\default.ctp, line 47
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 633
+Cake\View\View::render() - CORE\src\View\View.php, line 592
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 612
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-03-09 15:11:15 Notice: Notice (8): Undefined variable: authedUser in [C:\wamp\www\cakephp3login\src\Template\Layout\default.ctp, line 48]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 140
+include - APP/Template\Layout\default.ctp, line 48
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 633
+Cake\View\View::render() - CORE\src\View\View.php, line 592
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 612
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-03-09 15:11:37 Notice: Notice (8): Undefined variable: authedUser in [C:\wamp\www\cakephp3login\src\Template\Layout\default.ctp, line 49]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 140
+include - APP/Template\Layout\default.ctp, line 49
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 633
+Cake\View\View::render() - CORE\src\View\View.php, line 592
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 612
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-03-09 15:11:58 Notice: Notice (8): Undefined variable: authedUser in [C:\wamp\www\cakephp3login\src\Template\Layout\default.ctp, line 48]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 140
+include - APP/Template\Layout\default.ctp, line 48
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 633
+Cake\View\View::render() - CORE\src\View\View.php, line 592
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 612
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
